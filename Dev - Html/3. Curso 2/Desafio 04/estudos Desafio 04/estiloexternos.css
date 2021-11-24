@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/*
+    em html é ID    = em CSS é # - não pode usar dois ID no documento
+    em html é class = em css é . - pode ser multiplo
+*/
+
+body{
+    background-color: #fcf3e7; /*cor de fundo*/
+    font-family: Arial, Helvetica, sans-serif;/*fontes*/
+}
+h1{
+    color: #0b1831; /*cor do texto*/
+    text-align: center;/*alinhamento*/
+}
+h1#titlecap{
+    text-align: center;
+    color: #0d1303;
+}
+h1.subtitle{
+    text-align: left;
+    color: #0d1303;
+}
+h2{
+    color: #11264d ;
+    text-decoration: underline; /*negrito, sublinhado, italico*/
+}
+
+h3{
+    color: #122f64;
+}
+.destaque{
+    color: rgb(242, 240, 243);
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.712);
+}

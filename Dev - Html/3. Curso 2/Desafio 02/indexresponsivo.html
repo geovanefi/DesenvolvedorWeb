@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias Html</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <P>abrir esse site em varios dispositivos diferentes, ou ajuste o tamanho do navegador para visualizar.</P>
+
+    <picture>
+        <!--Para troca de imagem, use o source.media-type -->
+        <source media="(max-width: 750px)" srcset="estdesafio/imgP.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="estdesafio/imgM.png" type="image/png"> 
+        <img src="estdesafio/imgG.png" alt="imagem flexível">
+    </picture>
+
+    <!--No youtube possui biblioteca de audio - atribuicao não necessaria, consegue plano de fundo.
+    
+    Videos podem ser editados ou ajustados no heandbreck - programa para baixar. Ele converte-->
+
+    <p>outra forma</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/Horaextra.mp3" type="audio/mpeg">
+        <source src="midia/Horaextra.ogg" type="audio/ogg">
+        <source src="midia/Horaextra.wav" type="audio/wav">
+    </audio>
+
+    <h1>Reproduzindo audio</h1>
+    <P>Colocando de forma direta</P>
+    <audio src="midia/Horaextra.mp3" controls autoplay></audio>
+    <!--formatos MP3 WAV OGG-->
+
+    <h1>Hospedagem de videos</h1>
+    <p>Esse primeiro exemplo é de videos hospedados no proprio servidor</p>
+    <video width="500" poster="estdesafio/imgP.png" controls>
+        <!--use o source.src para inserir player. formatos indicados mp4 m4v webm ogg-->
+        <source src="midia/Heitor.mp4" type="video/mp4">
+        <p>Seu navegador nao possuem o reprodutor compativel.</p>
+    
+    </video>
+    <!--Assim como os audios, os videos precisam ser inseridos em varios formatos. em poster= é possivel colocar capa do video-->
+
+    <h2>Outras formas de hospedagem</h2>
+    <p>Forma mais leve e indicada para inserção de videos.</p>
+
+    <h3>Videos do youtube</h3>
+    <!--No compartilhamento do YT há opção "Incorporar". Apenas cole aqui-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CZrMboESr7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!--opções de hospedagem com controle de reprodução apenas para assinantes: Vimeo é bom, caro, mas bom.-->
+
+    
+</body>
+</html>

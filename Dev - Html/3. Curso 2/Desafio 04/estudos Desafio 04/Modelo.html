@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas 2</title>
+    <style>
+      body{
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: rgb(182, 182, 182);
+          margin: 0px;
+      }
+      header{
+          background-color: white;
+          padding: 10px;
+          margin: 10px;
+          box-shadow: 4px -5px 2px rgba(0, 0, 0, 0.584);
+          border-radius: 10px;
+        
+      }
+      nav{
+          background-color: rgb(195,195,195);
+          padding: 3px;
+          
+      }
+      nav > a{
+          text-decoration: none;
+          color: rgb(15, 15, 15);
+          font-weight: bolder;
+      }
+      nav > a:hover{
+          text-decoration: underline;
+          text-transform: uppercase;
+      }
+      main{
+          background-color: white;
+          padding: 10px;
+          margin: 10px;
+          box-shadow: 4px -5px 2px rgba(0, 0, 0, 0.584);
+          border-radius: 0px 30px 0px 30px;
+      }
+      article{
+          background-color: rgb(189, 189, 189);
+          padding: 5px;         
+      }
+      article > aside{
+          background-color:rgb(129, 129, 129);
+          text-align: right;
+
+      }
+      footer{
+          background-color: rgb(43, 43, 43);
+          color: whitesmoke;
+          text-align: center;
+          padding: 4px;
+          margin: 0px;
+      }
+      #bola{
+          border: 20px solid black;
+
+          height: 100px;
+          width: 100px;
+          margin: 10px;
+          text-align: center;
+          background-color: whitesmoke;
+          border-radius: 50%;
+          border-image: url('icone-instagram.png') 50 repeat;
+      }
+      #borda{
+          border: 20px solid transparent;
+          padding: 10px;
+          border-image-source: url('icone-instagram.png');
+          border-image-slice: 27;
+          border-image-repeat: round;
+          /*pode ser simplificada = border-image: url('#') 27 repeat;*/
+      }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Tipos de caixas</h1>
+        <nav>
+            <a href="#">pag1</a>
+            <a href="#">pag2</a>
+            <a href="#">pag3</a>
+            <a href="#">pag4</a>
+            <a href="#">pag5</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="assuntos">
+            <nav>
+                <a href="#">Esportes</a>
+                <a href="#">Política</a>
+                <a href="#">Tecnologia</a>
+                <a href="#">Diversos</a>
+            </nav>
+        </section>
+
+        <section id="artigos">
+            <article>
+                <h2>Article 1</h2>
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. <a href="#">Link da pagina</a>Omnis quisquam tenetur maiores necessitatibus iste labore est, veritatis totam eveniet cupiditate quaerat itaque neque distinctio vero reiciendis ratione. Voluptas, ad placeat?</p>
+                <aside>
+                    <p>Escrito por: Geovane</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Article 2</h2>
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. <a href="#">Link da pagina</a>Omnis quisquam tenetur maiores necessitatibus iste labore est, veritatis totam eveniet cupiditate quaerat itaque neque distinctio vero reiciendis ratione. Voluptas, ad placeat?</p>
+                <aside>
+                    <p>Escrito por: Geovane</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+        
+    <footer>
+        <p>Desenvolvido por Geovane</p>
+    </footer>
+    <div id=bola> </div>
+
+    <div id=borda>
+        <h1>Borda personalizada</h1>
+    </div>
+    
+</body>
+</html>

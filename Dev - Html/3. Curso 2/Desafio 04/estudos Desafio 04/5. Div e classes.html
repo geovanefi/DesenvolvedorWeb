@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <style>
+        div{
+            display: inline-block; /*colocar em linha*/
+            background-color: lightgrey;
+            height: 200px; /*Altura*/
+            width: 200px; /*largura*/
+            border: 1px solid black; /*caixa, borda*/
+        }
+        div:hover > p{ /*destacar quando o mouser passar sobre*/
+            display: block;
+            background-color: cornflowerblue;
+            color: #000000; 
+            width: 300px;
+        }
+    </style>   
+</head>
+<body>
+    <h1>Exemplo 01</h1>
+    <p></p>
+    <div> 
+        <p>texto 01</p>
+        </div>
+    <div> 
+        <p>texto 02</p>
+    </div>
+    <div> 
+        <p>texto 03</p>
+    </div>
+    <div> 
+        <p>texto 04</p>
+    </div>
+    <div> 
+        <p>texto 05</p>
+    </div>
+    <div> 
+        <p>texto 06</p>
+    </div>
+    <div> 
+        <p>texto 07</p>
+    </div>
+    <div> 
+        <p>texto 08</p>
+    </div>
+    <div> 
+        <p>texto 09</p>
+    </div>
+    
+</body>
+</html>
