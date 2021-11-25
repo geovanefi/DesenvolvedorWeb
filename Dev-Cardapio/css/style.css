@@ -3,43 +3,113 @@
 *{
     font-family: 'Times New Roman', Times, serif;
 }
+/* grid 960px*/ 
+.linha{
+	width: 960px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 5px 0;
+}
+.coluna{
+	padding: 0 10px;	
+	float: left;
+}
+
+.col1{
+	width: 60px
+}
+.col2{
+	width: 140px
+}
+.col3{
+	width: 220px
+}
+.col4{
+	width: 300px
+}
+.col5{
+	width: 380px
+}
+.col6{
+	width: 460px
+}
+.col7{
+	width: 540px
+}
+.col8{
+	width: 620px
+}
+.col9{
+	width: 700px
+}
+.col10{
+	width: 780px
+}
+.col11{
+	width: 860px
+}
+.col12{
+	width: 940px
+}
 body{
     background-image: linear-gradient( to right, #28666E, #bcb8b1);
     /*Pano de fundo do site. lá em 2004 era chamado de papel de parede*/
 }
-main{
+.main{
     border-radius: 30px; /*arredondamento de bordas*/
     background-color: rgba(245, 241, 237, 0.808); /*cor do fundo onde abriga o texto*/
     box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.952); /*sombra do background-color*/
-    width: 600px; /*largura do espaço ocupado pelo texto*/
+    max-width: 620px; /*largura do espaço ocupado pelo texto*/
     padding: 10px; /*espaço que separa o texto da caixa width*/
     margin: 10px auto; /*posição centralizada na tela*/
+   
 }
-footer{
+
+.main  ul{
+    columns: 2;
+    text-align:left;
+    list-style-position: inside; /*coloca marcador internamente*/
+    columns: 2; /*divide em colunas*/
+    list-style-type: '\2714\00a0\0020'; /*tipo de marcador selecionado e espaço de distancia*/
+    max-width: 30%;
+}
+.footer{
     border-radius: 30px; /*arredondamento de bordas*/
     background-color: rgba(245, 241, 237, 0.808); /*cor do fundo onde abriga o texto*/
     box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.952); /*sombra do background-color*/
     color: rgba(0, 0, 0, 0.658);
-    text-align: center;
-    width: 600px; /*largura do espaço ocupado pelo texto*/
+    max-width: 620px; /*largura do espaço ocupado pelo texto*/
     padding: 1px;
-    margin: 5px auto; /*posição centralizada na tela*/
+    margin: 1px auto; /*posição centralizada na tela*/
+    text-align: left;
+    
 }
-footer > p{
-    text-align: center;
-    color: rgba(0, 0, 0);
-    text-shadow:  2px 2px 2px rgba(0, 0, 0, 0.150);
+
+.footer  p{
+    text-align: left;
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    text-shadow:  1px 1px 1px rgba(0, 0, 0, 0.616);
+    
 }
-h1{
+.footer  img{
+    padding: 1px;
+    position: sticky;
+   
+}
+div  h1{
     color: black; /*cor do titulo*/
-    text-align: center; /*alinhamento do titulo*/
+    text-align: left; /*alinhamento do titulo*/
     text-shadow: 2px 2px 2px rgba(82, 82, 82, 0.747); /*sombra do texto*/
+    
 
 }
-h2{
+div  h2{
     color: #083e46;
 }
-p{
-    text-align: justify; /*Alinhamento do texto*/
-    
+div  p{
+    text-align: left; /*Alinhamento do texto*/
+    max-width: 60%;
+    padding: 2px;
+      
 }
