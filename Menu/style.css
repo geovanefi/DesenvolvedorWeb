@@ -42,12 +42,12 @@ html, body, .container {
 
 
 @keyframes gradient {
-  50% {
+  100% {
     background-position: 100% 0;
   }
 }
 @-webkit-keyframes gradient {
-  50% {
+  100% {
     background-position: 100% 0;
   }
 }
