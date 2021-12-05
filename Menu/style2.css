@@ -1,0 +1,45 @@
+@charset "utf-8"
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-image: linear-gradient( to right, #e3b3c6a6, #bcb8b1a6);
+    /*Pano de fundo do site. lá em 2004 era chamado de papel de parede*/
+}
+.header{
+    
+    max-width: 50%;
+    height: auto;
+}
+main{
+    border-radius: 30px; /*arredondamento de bordas*/
+    background-color: rgba(245, 241, 237, 0.808); /*cor do fundo onde abriga o texto*/
+    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.952); /*sombra do background-color*/
+    width: 600px; /*largura do espaço ocupado pelo texto*/
+    padding: 10px; /*espaço que separa o texto da caixa width*/
+    margin: auto; /*posição centralizada na tela*/
+    text-align: center;
+    text-decoration: dashed;
+    
+}
+main.footer {
+    padding-top:  11px;
+    margin-top: 10px;
+    
+}
+img{
+	max-width: 100%;
+	height: auto;
+h1{
+    color: #033F63; /*cor do titulo*/
+    text-align: center; /*alinhamento do titulo*/
+    text-shadow: 2px 2px 2px rgba(82, 82, 82, 0.747); /*sombra do texto*/
+}
+h2{
+    color: #083e46;
+}
+p{
+    text-align: center; /*Alinhamento do texto*/
+    
+}
