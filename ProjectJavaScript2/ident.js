@@ -19,43 +19,42 @@ function verificar(){
             genero = 'Homem'
             if (idade >= 0 && idade < 7) {
                 //Crianca
-                img.setAttribute('src', 'img/babym.jpg')
+                img.setAttribute('src', 'babym.png')
             } else if (idade <15 ) { 
                 //adolecente
-                img.setAttribute('src', 'img/boy.jpg')
+                img.setAttribute('src', 'boy.png')
             } else if (idade < 23) {
                 // jovem
-                img.setAttribute('src', 'img/teenm.jpg')
+                img.setAttribute('src', 'teenm.png')
             } else if ( idade < 50) {
                 // Adulto
-                img.setAttribute('src', 'img/adultm.jpg')
+                img.setAttribute('src', 'adultm.png')
             } else {
                 //Idoso
-                img.setAttribute('src', 'img/bigm.jpg')
+                img.setAttribute('src', 'bigm.png')
             }
 
         } else if (fsex[1].checked){
             genero = 'Mulher'
             if (idade >= 0 && idade < 7) {
                 //Crianca
-                img.setAttribute('src', 'img/babyf.jpg')
+                img.setAttribute('src', 'babyf.png')
             } else if (idade <15 ) { 
                 //adolecente
-                img.setAttribute('src', 'img/girlf.jpg')
+                img.setAttribute('src', 'girlf.png')
             } else if (idade < 23) {
                 // jovem
-                img.setAttribute('src', 'img/teenf.jpg')
+                img.setAttribute('src', 'teenf.png')
             } else if ( idade < 50) {
                 // Adulto
-                img.setAttribute('src', 'img/adultf.jpg')
+                img.setAttribute('src', 'adultf.png')
             } else {
                 //Idoso
-                img.setAttribute('src', 'img/bigf.jpg')
+                img.setAttribute('src', 'bigf.png')
             }
         }
         
         res.innerHTML = `Detectamos que é ${genero} com ${idade} anos.`
-        
         res.appendChild(img)
     }
 
