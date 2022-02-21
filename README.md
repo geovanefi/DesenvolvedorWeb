@@ -10,3 +10,5 @@
  <a href = "https://geovanefi.github.io/DesenvolvedorWeb/ProjectJavaScript3/ProjetoJS03.html"> 3º projeto com JavaScript - Contador Progressivo e Regressivo</a>
 
  <a href = "https://geovanefi.github.io/DesenvolvedorWeb/ProjectJavaScript4/ProjetoJS04.html"> 4º projeto com JavaScript - Tabuada</a>
+
+ <a href = "https://geovanefi.github.io/DesenvolvedorWeb/ProjectJavaScript5/ProjetoJS05.html"> 4º projeto com JavaScript - Tabuada</a>
