@@ -45,17 +45,15 @@ function resposta4() {
         window.alert(`Digite um nome e Sobrenome`);
     }               
 }
-
-function resposta5(){
+function resposta5() {
     var nota1 = document.getElementById("nota1").value;
     var nota2 = document.getElementById("nota2").value;
     var nota3 = document.getElementById("nota2").value;
-    var media = (nota1 + nota2 + nota2) / 3;
+    var media = (nota1 + nota2 + nota3) / 3;
     
-    if (media != '') {
-        window.alert ('Adicione notas para Analisar.')
+    if (media.value.length != '') {
+        window.alert ('Adicione notas para Analisar.');
     } else {
-        window.alert (`A média das notas é ${media}.`)
-
+        window.alert (`A média das notas é ${media}.`);
     }
 }
