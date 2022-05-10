@@ -51,7 +51,7 @@ function resposta5() {
     var nota3 = document.getElementById("nota2").value;
     var medias = (nota1 + nota2 + nota3) / 3;
     
-    if (medias != 0 ) {
+    if (nota1.value.length  != '' && nota2.value.length != '' && nota3.value.length != '' ) {
         window.alert (`A média das notas é ${medias}.`);
     } else {
         window.alert (`Adicione notas para Analisar ${medias} .`);
