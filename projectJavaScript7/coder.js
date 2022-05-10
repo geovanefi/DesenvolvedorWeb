@@ -52,8 +52,8 @@ function resposta5() {
     var media = (nota1 + nota2 + nota3) / 3;
     
     if (media.value.length != '') {
-        window.alert ('Adicione notas para Analisar.');
-    } else {
         window.alert (`A média das notas é ${media}.`);
+    } else {
+        window.alert ('Adicione notas para Analisar.');
     }
 }
