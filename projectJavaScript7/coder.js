@@ -46,14 +46,15 @@ function resposta4() {
     }               
 }
 function resposta5() {
-    var nota1 = document.getElementById(("nota1").value;
-    var nota2 = document.getElementById(("nota2").value;
-    var nota3 = document.getElementById(("nota2").value;
-    var medias = parceInt(nota1) + parceInt(nota2) + parceInt(nota3) / 3;
+    var nota1 = document.getElementById("nota1").value;
+    var nota2 = document.getElementById("nota2").value;
+    var nota3 = document.getElementById("nota2").value;
+    var medias = parceInt(nota1) + parceInt(nota2) + parceInt(nota3);
+    var calc = medias / 3;
     
     if (true) {
-        window.alert (`A média das notas é ${medias}.`);
+        window.alert (`A média das notas é ${calc}.`);
     } else {
-        window.alert (`Adicione notas para Analisar ${medias} .`);
+        window.alert (`Adicione notas para Analisar.`);
     }
 }
