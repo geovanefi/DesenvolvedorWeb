@@ -52,9 +52,19 @@ function resposta5() {
     var medias = parseInt(nota1) + parseInt(nota2) + parseInt(nota3);
     var calc = medias / 3;
     
-    if (calc != '') {
+    if (nota1 != '' && nota2 != '' && nota3 != '') {
         window.alert (`A média das notas é ${calc}.`);
     } else {
-        window.alert (`Adicione notas para Analisar.`);
+        window.alert (`Adicione notas para analisar.`);
+    }
+}
+function resposta6() {
+    var hora = document.getElementById("hora").value;
+    var min = parseInt(hora) * 60 
+    
+    if (hora != '') {
+        window.alert (`A conversão de ${hora}horas em minutos é = ${min} minutos.`);
+    } else {
+        window.alert (`Adicione as horas para analisar.`);
     }
 }
