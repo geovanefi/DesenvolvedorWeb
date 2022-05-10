@@ -46,10 +46,10 @@ function resposta4() {
     }               
 }
 function resposta5() {
-    var nota1 = document.getElementById(parseInt("nota1")).value;
-    var nota2 = document.getElementById(parseInt("nota2")).value;
-    var nota3 = document.getElementById(parseInt("nota2")).value;
-    var medias = (number(nota1) + number(nota2) + number(nota3)) / 3;
+    var nota1 = document.getElementById(("nota1").value;
+    var nota2 = document.getElementById(("nota2").value;
+    var nota3 = document.getElementById(("nota2").value;
+    var medias = parceInt(nota1) + parceInt(nota2) + parceInt(nota3) / 3;
     
     if (true) {
         window.alert (`A média das notas é ${medias}.`);
