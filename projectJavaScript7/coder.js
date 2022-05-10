@@ -50,9 +50,9 @@ function resposta5(){
     var nota1 = document.getElementById("nota1").value;
     var nota2 = document.getElementById("nota2").value;
     var nota3 = document.getElementById("nota2").value;
-    var media = parseInt(nota1) + parseInt(nota2) + parseInt(nota2) / 3;
+    var media = (nota1 + nota2 + nota2) / 3;
     
-    if (media.value.length != '') {
+    if (media <= 0) {
         window.alert ('Adicione notas para Analisar.')
     } else {
         window.alert (`A média das notas é ${media}.`)
