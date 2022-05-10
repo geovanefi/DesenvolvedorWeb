@@ -49,11 +49,11 @@ function resposta5() {
     var nota1 = document.getElementById("nota1").value;
     var nota2 = document.getElementById("nota2").value;
     var nota3 = document.getElementById("nota2").value;
-    var media = (nota1 + nota2 + nota3) / 3;
+    var medias = (nota1 + nota2 + nota3) / 3;
     
-    if (media.value.length = '' ) {
-        window.alert (`A média das notas é ${media}.`);
+    if (medias.value.length = '' ) {
+        window.alert (`A média das notas é ${medias}.`);
     } else {
-        window.alert (`Adicione notas para Analisar ${media} .`);
+        window.alert (`Adicione notas para Analisar ${medias} .`);
     }
 }
