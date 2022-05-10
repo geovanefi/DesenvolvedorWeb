@@ -52,7 +52,7 @@ function resposta5 (){
     let media = (nota1.value+nota2.value+nota3.value)/3
 
 
-    if (media.value.length != '' == 0) {
+    if (media.value.length != '') {
         window.alert ('Adicione notas para Analisar.')
     } else {
         window.alert (`A média das notas é ${media}.`)
