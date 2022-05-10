@@ -54,6 +54,6 @@ function resposta5() {
     if (media.value.length != '') {
         window.alert (`A média das notas é ${media}.`);
     } else {
-        window.alert ('Adicione notas para Analisar.');
+        window.alert (`Adicione notas para Analisar ${media} .`);
     }
 }
