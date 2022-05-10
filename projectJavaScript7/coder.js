@@ -27,7 +27,7 @@ function resposta3() {
     if ( sNome.value.length != '') {
         window.alert(`A resposta da questão 3 é ${nome.value} ${sNome.value}`['toUpperCase']());
     } else {
-        window.alert(`Digite um nome e Sobrenome`);
+        window.alert(`Digite um Nome e Sobrenome`);
     }                   
 }
 
