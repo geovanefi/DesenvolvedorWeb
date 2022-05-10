@@ -68,7 +68,7 @@ function resposta6() {
         window.alert (`Adicione as horas para analisar.`);
     }
 }
-function resposta8(){   
+function resposta8() {   
     let meusNumeros = [1,2,3,4,5,6,7]
     for (let index = 0 ; index < meusNumeros.length; index++) {
         let meuValor = meusNumeros[index];
