@@ -49,7 +49,7 @@ function resposta5 (){
     let nota1 = document.querySelector('nota1')
     let nota2 = document.querySelector('nota2')
     let nota3 = document.querySelector('nota3')
-    let media = (nota1+nota2+nota3)/3
+    let media = (nota1.value+nota2.value+nota3.value)/3
 
 
     if (media == 0) {
