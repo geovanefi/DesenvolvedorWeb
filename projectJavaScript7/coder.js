@@ -45,4 +45,17 @@ function resposta4() {
         window.alert(`Digite um nome e Sobrenome`);
     }               
 }
+function resposta5 (){
+    let nota1 = document.querySelector('nota1')
+    let nota2 = document.querySelector('nota2')
+    let nota3 = document.querySelector('nota3')
+    let media = (nota1+nota2+nota3)/3
 
+
+    if (media == 0) {
+        window.alert ('Adicione notas para Analisar.')
+    } else {
+        window.alert (`A média das notas é ${media}.`)
+
+    }
+}
