@@ -42,7 +42,7 @@ function resposta4() {
     if (nome.value.length  != '' && sNome.value.length != '') {
         window.alert(completeName);
     } else {
-        window.alert(`Digite um nome e Sobrenome`);
+        window.alert(`Digite um Nome e Sobrenome`);
     }               
 }
 function resposta5() {
