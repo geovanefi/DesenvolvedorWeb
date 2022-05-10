@@ -52,7 +52,7 @@ function resposta5(){
     var nota3 = document.getElementById("nota2").value;
     var media = (nota1 + nota2 + nota2) / 3;
     
-    if (media <= 0) {
+    if (media < 0) {
         window.alert ('Adicione notas para Analisar.')
     } else {
         window.alert (`A média das notas é ${media}.`)
