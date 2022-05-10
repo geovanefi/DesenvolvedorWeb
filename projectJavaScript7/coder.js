@@ -48,11 +48,11 @@ function resposta4() {
 function resposta5() {
     var nota1 = document.getElementById("nota1").value;
     var nota2 = document.getElementById("nota2").value;
-    var nota3 = document.getElementById("nota2").value;
-    var medias = parceInt(nota1) + parceInt(nota2) + parceInt(nota3);
+    var nota3 = document.getElementById("nota3").value;
+    var medias = parseInt(nota1) + parseInt(nota2) + parseInt(nota3);
     var calc = medias / 3;
     
-    if (true) {
+    if (calc != '') {
         window.alert (`A média das notas é ${calc}.`);
     } else {
         window.alert (`Adicione notas para Analisar.`);
