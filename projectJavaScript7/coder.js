@@ -45,13 +45,13 @@ function resposta4() {
         window.alert(`Digite um nome e Sobrenome`);
     }               
 }
-function resposta5 (){
-    let nota1 = document.querySelector('nota1')
-    let nota2 = document.querySelector('nota2')
-    let nota3 = document.querySelector('nota3')
-    let media = (nota1.value+nota2.value+nota3.value)/3
 
-
+function resposta5(){
+    var nota1 = document.getElementById("nota1").value;
+    var nota2 = document.getElementById("nota2").value;
+    var nota3 = document.getElementById("nota2").value;
+    var media = parseInt(nota1) + parseInt(nota2) + parseInt(nota2) / 3;
+    
     if (media.value.length != '') {
         window.alert ('Adicione notas para Analisar.')
     } else {
