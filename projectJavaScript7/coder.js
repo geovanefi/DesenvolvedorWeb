@@ -77,8 +77,6 @@ for (let index = 0 ; index < meusNumeros.length; index++) {
 function resposta8() {   
     if (resto === 0){
         window.alert (meuValor);
-    } else {
-        window.alert (`falhou.`);
     }
     
 }
