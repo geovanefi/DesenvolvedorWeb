@@ -70,13 +70,17 @@ function resposta6() {
 }
 
 let meusNumeros = [1,2,3,4,5,6,7]
+let pares = []
 for (let index = 0 ; index < meusNumeros.length; index++) {
     let meuValor = meusNumeros[index];
     let resto = ((meuValor % 2));
+    if (resto === 0){
+        pares.push(meuValor);
+    }
 }
 function resposta8() {   
-    if (resto === 0){
-        window.alert (meuValor);
-    }
+    
+    window.alert (pares);
+    
     
 }
