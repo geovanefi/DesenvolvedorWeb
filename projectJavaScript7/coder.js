@@ -69,13 +69,13 @@ function resposta6() {
     }
 }
 
-let meusNumeros = [1,2,3,4,5,6,7]
-let pares = []
-for (let index = 0 ; index < meusNumeros.length; index++) {
-    let meuValor = meusNumeros[index];
-    let resto = ((meuValor % 2));
-    if (resto === 0){
-        pares.push(meuValor);
+let meusNumeros = [1,2,3,4,5,6,7] // 1-meu array a ser pecorrido no for
+let pares = [] // 2-variavel vazia a ser preenchida posteriormente
+for (let index = 0 ; index < meusNumeros.length; index++) { // 3-no for, crio uma variavel index com valor 0; e enquanto ela for menor (<) que meu array no item 1, vou pecorrecorrer os itens e adicionar 1 ao index (index++).
+    let meuValor = meusNumeros[index]; //4-crio outra variavel qua vai receber os valeres do item 3 (let index)
+    let resto = ((meuValor % 2)); // 5-crio outra variavel que recebe os valores pares(%2)
+    if (resto === 0){ 
+        pares.push(meuValor); //6-incluo os valores na variavel vazia do item 2
     }
 }
 function resposta8() {   
