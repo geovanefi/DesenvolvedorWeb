@@ -8,104 +8,121 @@
     <title>Exercicios</title>
 </head>
 <body>
-    <h1>Exercícios</h1>
-    <div>
-        <h4>
-            1 - Declare uma variável do tipo string e atribua o seu nome e imprima no console o valor dessa variável.
-        </h4>
-        <p>
-            Nome a ser colocado na variável: 
-            <input type="text" name="nome" id="nome">
-            <input type="button" value="Resposta" onclick="resposta1()">
-        </p>
-    </div>
-
-    <div>
-        <h4>
-            2 - Coloque o texto da variável acima em caixa alta.
-        </h4>
-        <p>
-            Clique para ver a
-            <input type="button" value="Resposta" onclick="resposta2()">
-        </p>
-    </div>
-    <div>
-        <h4>
-            3 - Concatenar o valor dessa dessa variável com o seu sobrenome adicionando um espaço entre entre os dois
-        </h4>
-        <p>
-            Sobrenome a ser colocado na variável: 
-            <input type="text" name="sNome" id="sNome">
-            <input type="button" value="Resposta" onclick="resposta3()">
-        </p>
-    </div>
-    <div>
-        <h4>
-            4 - Deixe somente o valor da primeira letra em caixa alta.
-        </h4>
-        <p>
-            Clique para ver a
-            <input type="button" value="Resposta" onclick="resposta4()">
-        </p>
-    </div>
-
-    
-
-    <div>
-        <h4>
-            5 - Crie uma função para calcular a média de um aluno, essa função deve receber as três notas do aluno e retornar o valor calculado.
-        </h4>
-
-        <fieldset>
-            <legend>Média das notas</legend>
-            <label>1ª nota:</label>
-            <input id="nota1" type="text"/><br>
-            <label>2ª nota: </label>
-            <input id="nota2" type="text"/><br>
-            <label>3ª nota: </label>
-            <input id="nota3" type="text"/><br>
-            <button onclick="resposta5()">Calcular Média</button>
-        </fieldset>
-
-    </div>
-    
-        
-    <div>
-        <h4>
-            6 - Crie uma função que recebe por parâmetro o número de horas e retorna a quantidade de minutos equivalentes a quantidade de horas passada. 
-        </h4>
-        <p>
-            Exemplo 1: calcularHoras(1) retorna 60 minutos  
-            Exemplo 2: calcularHoras(2) retorna 120 minutos
-        </p>
-    </div>
-    
-        <fieldset>
-            <legend>insira a quantidade de horas</legend>
-            <label>hora:</label>
-            <input id="hora" type="text"/><br>
+    <header>
+       <div>
+            <H1>
+                Exercícios +1Code
+            </H1>
+        </div>
+        <div>  
+            <div>
+                <button class="button" onclick="atividade1()">Atividade 01</button> 
             
-            <button onclick="resposta6()">Converter hora em min</button>
-        </fieldset>
-    <div>
-        <h4>
-            7 - Crie uma função para efetuar a soma, subtração, multiplicação e divisão de dois números. Essa função deve receber três parâmetros, sendo dois números e uma string contendo o texto da operação desejada.
-        </h4>    
-        <p>
-            Exemplo 1: calcularNumeros( 1, 5, “soma”) retorna 6
-            Exemplo 2: calcularNumeros( 10, 7, “subtrai”) retorna 3
-        </p>   
+                <button class="button" onclick="atividade2()">Atividade 02</button>
+            </div>
+        </div>
+    </header>
+    <section id="pag1">
+        <h1>Exercícios</h1>
+
+        <div>
+            <h4>
+                1 - Declare uma variável do tipo string e atribua o seu nome e imprima no console o valor dessa variável.
+            </h4>
+            <p>
+                Nome a ser colocado na variável: 
+                <input type="text" name="nome" id="nome">
+                <input type="button" value="Resposta" onclick="resposta1()">
+            </p>
+        </div>
+
+        <div>
+            <h4>
+                2 - Coloque o texto da variável acima em caixa alta.
+            </h4>
+            <p>
+                Clique para ver a
+                <input type="button" value="Resposta" onclick="resposta2()">
+            </p>
+        </div>
+        <div>
+            <h4>
+                3 - Concatenar o valor dessa dessa variável com o seu sobrenome adicionando um espaço entre entre os dois
+            </h4>
+            <p>
+                Sobrenome a ser colocado na variável: 
+                <input type="text" name="sNome" id="sNome">
+                <input type="button" value="Resposta" onclick="resposta3()">
+            </p>
+        </div>
+        <div>
+            <h4>
+                4 - Deixe somente o valor da primeira letra em caixa alta.
+            </h4>
+            <p>
+                Clique para ver a
+                <input type="button" value="Resposta" onclick="resposta4()">
+            </p>
+        </div>
+
+        <div>
+            <h4>
+                5 - Crie uma função para calcular a média de um aluno, essa função deve receber as três notas do aluno e retornar o valor calculado.
+            </h4>
+
+            <fieldset>
+                <legend>Média das notas</legend>
+                <label>1ª nota:</label>
+                <input id="nota1" type="text"/><br>
+                <label>2ª nota: </label>
+                <input id="nota2" type="text"/><br>
+                <label>3ª nota: </label>
+                <input id="nota3" type="text"/><br>
+                <button onclick="resposta5()">Calcular Média</button>
+            </fieldset>
+
+        </div>
+                    
+        <div>
+            <h4>
+                6 - Crie uma função que recebe por parâmetro o número de horas e retorna a quantidade de minutos equivalentes a quantidade de horas passada. 
+            </h4>
+            <p>
+                Exemplo 1: calcularHoras(1) retorna 60 minutos  
+                Exemplo 2: calcularHoras(2) retorna 120 minutos
+            </p>
+            <fieldset>
+                <legend>insira a quantidade de horas</legend>
+                <label>hora:</label>
+                <input id="hora" type="text"/><br>
+                
+                <button onclick="resposta6()">Converter hora em min</button>
+            </fieldset>
+        </div>
+                    
+        <div>
+            <h4>
+                7 - Crie uma função para efetuar a soma, subtração, multiplicação e divisão de dois números. Essa função deve receber três parâmetros, sendo dois números e uma string contendo o texto da operação desejada.
+            </h4>    
+            <p>
+                Exemplo 1: calcularNumeros( 1, 5, “soma”) retorna 6
+                Exemplo 2: calcularNumeros( 10, 7, “subtrai”) retorna 3
+            </p>   
 
 
-    </div>     
-    <div>
-        <h4>
-        8 - A variável do tipo array com os números [1, 2, 3, 4, 5, 6, 7]; imprima somente os números pares no console
-        <input type="button" value="Resposta" onclick="resposta8()">
-        </h4>
-        
-    </div>
-    
+        </div>     
+        <div>
+            <h4>
+            8 - A variável do tipo array com os números [1, 2, 3, 4, 5, 6, 7]; imprima somente os números pares no console
+            <input type="button" value="Resposta" onclick="resposta8()">
+            </h4>
+            
+        </div>
+    </section>
+    <section id="#pag2">
+
+    </section>
+
     <script src="./coder.js"></script>
 </body>
 </html>

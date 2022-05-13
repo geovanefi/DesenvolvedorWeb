@@ -1,22 +1,45 @@
+header{
+    background: whitesmoke;
+    color: rgb(49, 28, 2);
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    min-width: 400px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.795);
+}
+
 body {
+    margin: 10px;
     background: rgba(6, 94, 112, 0.767);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
     font: medium 20px;
 }
 
-header {
-    color: bisque;
+
+.button {
+    background-color: #1f218dd0; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
-}
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.795);
+}  
+
 
 section {
     background: whitesmoke;
-    border-radius: 10%;
+    border-radius: 15px;
     padding: 15px;
-    width: 400px;
-    margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.795);
+    min-width: 400px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.795);
 
 }
 
@@ -25,7 +48,7 @@ footer {
     text-align: center;
     font-style: italic;
 
-}
+}/*
 #seltab {
     position: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.795);

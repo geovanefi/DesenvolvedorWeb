@@ -1,15 +1,11 @@
+var nome = document.getElementById('nome');
 
 function resposta1() {
-    var nome = document.getElementById('nome');
-    
-                
     if (nome.value.length != '') {
         window.alert(`Variável é ${nome.value}`);
     } else {
         window.alert(`Digite um nome`);
-    }
-
-                   
+    }   
 }
 function resposta2() {
     var nome = document.getElementById('nome');
@@ -84,3 +80,4 @@ function resposta8() {
     
     
 }
+
