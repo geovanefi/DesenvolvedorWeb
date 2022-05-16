@@ -34,6 +34,7 @@
                 <input type="text" name="nome" id="nome">
                 <input type="button" value="Resposta" onclick="resposta1()">
             </p>
+            
         </div>
 
         <div>
@@ -63,6 +64,7 @@
                 Clique para ver a
                 <input type="button" value="Resposta" onclick="resposta4()">
             </p>
+            <div id="res4"></div> 
         </div>
 
         <div>
@@ -108,7 +110,30 @@
                 Exemplo 1: calcularNumeros( 1, 5, “soma”) retorna 6
                 Exemplo 2: calcularNumeros( 10, 7, “subtrai”) retorna 3
             </p>   
-
+            <form name="calcform" method="post" action="">
+                <fieldset>
+                   <legend>Calculadora Simples</legend>
+             
+                   <label for="valor1">Digite o valor 1:</label>
+                   <input type="text" name="valor1" id="valor1" /><br>
+             
+                   <label for="valor2">Digite o valor 2:</label>
+                   <input type="text" name="valor2" id="valor2" /><br>
+             
+                   <label for="oper">Selecione a operação:</label>
+                   <select name="oper" id="oper">
+                      <option value="somar">Somar</option>
+                      <option value="subtrair">Subtrair</option>
+                      <option value="multiplicar">Multiplifcar</option>
+                      <option value="dividir">Dividir</option>
+                   </select><br>
+             
+                   <label for="res">Resultado:</label>
+                   <input type="text" name="res" id="res" /><br>
+             
+                   <input type="button" value="Calcular" class="botao" onClick="calcular(document.calcform.oper.value)"/>
+                </fieldset>
+             </form>
 
         </div>     
         <div>
@@ -120,8 +145,154 @@
         </div>
     </section>
     <section id="#pag2">
+        <h1>Exercícios 2</h1>
 
+        <div>
+            <h4>
+                1 - Declare uma variável do tipo objeto que possua os atributos: nome, telefone, endereço e idade. 
+            </h4>
+            <p>
+                <fieldset>
+                    <legend>Objeto com atributos:</legend>
+                    <label>Nome:</label>
+                    <input id="onome" type="text"/><br>
+                    <label>Telefone: </label>
+                    <input id="otelefone" type="text"/><br>
+                    <label>Endereço: </label>
+                    <input id="oendereco" type="text"/><br>
+                    <label>Idade: </label>
+                    <input id="aidade" type="text"/><br>
+                    <button onclick="exercicio1()">Criar objeto</button>
+                </fieldset>
+            </p>
+            <div id="exercicio1">
+
+            </div>
+        </div>
+
+        <div>
+            <h4>
+                2 - Referente ao objeto criado atribua as informações: João, 55-(011) 9928-9918, Rua B, 18 no objeto criado.
+            </h4>
+            <p>
+                Clique para ver a
+                <input type="button" value="Resposta" onclick="resposta2()">
+            </p>
+        </div>
+        <div>
+            <h4>
+                3 - Imprima no console somente o nome
+            </h4>
+            <p>
+                Sobrenome a ser colocado na variável: 
+                <input type="text" name="sNome" id="sNome">
+                <input type="button" value="Resposta" onclick="resposta3()">
+            </p>
+        </div>
+        <div>
+            <h4>
+                4 - Imprima no console somente a idade
+            </h4>
+            <p>
+                Clique para ver a
+                <input type="button" value="Resposta" onclick="resposta4()">
+            </p>
+        </div>
+
+        <div>
+            <h4>
+                5 - Imprima no console o texto buscando as informações do objeto
+                “O número do telefone do João é 55-(011) 9928-9918 e ele mora na Rua B e ele tem 18 anos”
+                
+            </h4>
+
+            <fieldset>
+                <legend>Média das notas</legend>
+                <label>1ª nota:</label>
+                <input id="nota1" type="text"/><br>
+                <label>2ª nota: </label>
+                <input id="nota2" type="text"/><br>
+                <label>3ª nota: </label>
+                <input id="nota3" type="text"/><br>
+                <button onclick="resposta5()">Calcular Média</button>
+            </fieldset>
+
+        </div>
+                    
+        <div>
+            <h4>
+                6 - Crie uma variável do tipo array que contenha vários objetos com informações diferentes.
+                Ex1: João, 55-(011) 9928-9918, Rua B, 18.
+                Ex2: Carlos, 55-(051) 9908-6666, Rua C, 22.
+                Ex3: Gustavo, 55-(051) 9908-9968, Rua C, 13.
+                Ex4: Bruno, 55-(051) 9908-1568, Rua C, 50. 
+            </h4>
+            <p>
+                Exemplo 1: calcularHoras(1) retorna 60 minutos  
+                Exemplo 2: calcularHoras(2) retorna 120 minutos
+            </p>
+            <fieldset>
+                <legend>insira a quantidade de horas</legend>
+                <label>hora:</label>
+                <input id="hora" type="text"/><br>
+                
+                <button onclick="resposta6()">Converter hora em min</button>
+            </fieldset>
+        </div>
+                    
+        <div>
+            <h4>
+                7 - Crie uma função que retorne um novo array somente com os maiores de idade. 
+                Exemplo 1: maioresDeIdade() retorna um array com o João, Carlos e Bruno
+            </h4>    
+            <p>
+                Exemplo 1: calcularNumeros( 1, 5, “soma”) retorna 6
+                Exemplo 2: calcularNumeros( 10, 7, “subtrai”) retorna 3
+            </p>   
+
+
+        </div>     
+        <div>
+            <h4>
+            8 - Crie uma função que retorne a soma de todas as idades. 
+            <input type="button" value="Resposta" onclick="resposta8()">
+            </h4>
+            
+        </div>
+        <div>
+            <h4>
+            9 - Crie um botão com o texto “Alterar” e uma tag h1 com o título “Minha página”. Adicione no html um evento onclick chamando uma função que deve alterar o texto da tag h1 para “Outra página” 
+            <input type="button" value="Resposta" onclick="resposta8()">
+            </h4>
+            
+        </div>
+        <div>
+            <h4>
+            10 - Altere o texto do h1 adicionando um html interno com “Minha <small>página</small>” 
+            <input type="button" value="Resposta" onclick="resposta8()">
+            </h4>
+            
+        </div>
+        <div>
+            <h4>
+            extra - Crie uma página html com um formulário com os seguintes requisitos:
+            <ul>
+                <li>O formulário deve possuir os inputs nome, telefone, sexo, endereço e idade com um botão “Salvar”</li>
+                <li>Caso o usuário não preencha um dos campos é necessário informar os campos que não foram preenchidos</li>
+                <li>O campo idade deve ser um número, caso não seja informado um número no input informe o usuário </li>
+                <li>Caso o formulário seja válido adicione essas informações formatadas com html abaixo do formulário</li>
+                <li>O formulário deve ser validado e exibir as mensagens ao clicar no botão salvar</li>
+
+            </ul>
+            <input type="button" value="Resposta" onclick="resposta8()">
+            </h4>
+            
+        </div>
     </section>
+
+    <footer>
+        <p>&copy; Queen Web Developer</p>
+    </footer>
 
     <script src="./coder.js"></script>
 </body>
