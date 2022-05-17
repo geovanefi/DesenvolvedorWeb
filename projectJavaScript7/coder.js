@@ -179,7 +179,7 @@ function maiorIdade(objeto){
 
 // 8 - Crie uma função que retorne a soma de todas as idades.
 
-function resposta8() {
+function resp8() {
     var somar = 0; 
 
     for(var i =0;i<cadastro.length;i++){ 
@@ -194,14 +194,14 @@ function resposta8() {
 
 
 //  9 - Crie um botão com o texto “Alterar” e uma tag h1 com o título “Minha página”. Adicione no html um evento onclick chamando uma função que deve alterar o texto da tag h1 para “Outra página” 
-function resposta9(){
+function resp9(){
     const questao9 = document.querySelector('h1.res9')
     questao9.innerText = " Outra página."
 }
 
 
 //10 - Altere o texto do h1 adicionando um html interno com “Minha <small>página</small>” 
-function resposta10(){
+function resp10(){
     const questao10 = document.querySelector('h1.res9')
     questao10.innerHTML += " A Resposta da questão 10 com : Minha <small>página</small."
 }
