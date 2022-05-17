@@ -112,8 +112,6 @@ let dados = {
     idade: ''
 }
 
-console.log(dados)
-
 //2 - Referente ao objeto criado atribua as informações: João, 55-(011) 9928-9918, Rua B, 18 no objeto criado.
 
 dados.nome = 'João';
@@ -122,6 +120,7 @@ dados.endereco = 'Rua B';
 dados.idade = '18';
 
 console.log(dados)
+
 
 // 3 - Imprima no console somente o nome
 console.log(dados.nome)
@@ -139,25 +138,25 @@ let cadastro = [
         nome: 'João', 
         telefone: '55-(011) 9928-9918', 
         endececo: 'Rua B', 
-        idade: '18',
+        idade: 18,
     },
     {
         nome: 'Carlos', 
         telefone: '55-(051) 9908-6666', 
         endececo: 'Rua C', 
-        idade: '13'
+        idade: 13,
     },
     {
         nome: 'Gustavo', 
         telefone: '55-(051) 9908-9968', 
         endececo: 'Rua C', 
-        idade: '13'
+        idade: 13,
     },
     {
         nome: 'Bruno', 
         telefone: '55-(051) 9908-1568', 
         endereco: 'Rua C', 
-        idade: '50',
+        idade: 50,
     },
 ];
 console.log(cadastro)
@@ -179,25 +178,43 @@ function maiorIdade(objeto){
 };
 
 // 8 - Crie uma função que retorne a soma de todas as idades.
-function somaIdades(){
 
-};
+function resposta8() {
+    var somar = 0; 
+
+    for(var i =0;i<cadastro.length;i++){ 
+      somar+=cadastro[i].idade; 
+    } 
+    
+    console.log(somar);
+    const questao8 = document.querySelector('div.res8')
+    questao8.innerText = `a soma de todas as idades é ${somar}` 
+}
+
+
 
 //  9 - Crie um botão com o texto “Alterar” e uma tag h1 com o título “Minha página”. Adicione no html um evento onclick chamando uma função que deve alterar o texto da tag h1 para “Outra página” 
-
+function resposta9(){
+    const questao9 = document.querySelector('h1.res9')
+    questao9.innerText = " Outra página."
+}
 
 
 //10 - Altere o texto do h1 adicionando um html interno com “Minha <small>página</small>” 
+function resposta10(){
+    const questao10 = document.querySelector('h1.res9')
+    questao10.innerHTML += " A Resposta da questão 10 com : Minha <small>página</small."
+}
 
 
 /* extra - Crie uma página html com um formulário com os seguintes requisitos:
-            <ul>
-                <li>O formulário deve possuir os inputs nome, telefone, sexo, endereço e idade com um botão “Salvar”</li>
-                <li>Caso o usuário não preencha um dos campos é necessário informar os campos que não foram preenchidos</li>
-                <li>O campo idade deve ser um número, caso não seja informado um número no input informe o usuário </li>
-                <li>Caso o formulário seja válido adicione essas informações formatadas com html abaixo do formulário</li>
-                <li>O formulário deve ser validado e exibir as mensagens ao clicar no botão salvar</li>
+    <ul>
+        <li>O formulário deve possuir os inputs nome, telefone, sexo, endereço e idade com um botão “Salvar”</li>
+        <li>Caso o usuário não preencha um dos campos é necessário informar os campos que não foram preenchidos</li>
+        <li>O campo idade deve ser um número, caso não seja informado um número no input informe o usuário </li>
+        <li>Caso o formulário seja válido adicione essas informações formatadas com html abaixo do formulário</li>
+        <li>O formulário deve ser validado e exibir as mensagens ao clicar no botão salvar</li>
 
-            </ul>
+    </ul>
 
 */

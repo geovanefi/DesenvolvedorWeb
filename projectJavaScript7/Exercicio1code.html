@@ -151,72 +151,37 @@
             <h4>
                 1 - Declare uma variável do tipo objeto que possua os atributos: nome, telefone, endereço e idade. 
             </h4>
-            <p>
-                <fieldset>
-                    <legend>Objeto com atributos:</legend>
-                    <label>Nome:</label>
-                    <input id="onome" type="text"/><br>
-                    <label>Telefone: </label>
-                    <input id="otelefone" type="text"/><br>
-                    <label>Endereço: </label>
-                    <input id="oendereco" type="text"/><br>
-                    <label>Idade: </label>
-                    <input id="aidade" type="text"/><br>
-                    <button onclick="exercicio1()">Criar objeto</button>
-                </fieldset>
-            </p>
-            <div id="exercicio1">
-
-            </div>
+            <p>console.log(dados)</p>
+            <div id="res1"></div>
+            <!--<input type="button" value="Exibir objeto" onclick="resp1()">-->
         </div>
 
         <div>
             <h4>
                 2 - Referente ao objeto criado atribua as informações: João, 55-(011) 9928-9918, Rua B, 18 no objeto criado.
             </h4>
-            <p>
-                Clique para ver a
-                <input type="button" value="Resposta" onclick="resposta2()">
-            </p>
+            <p>console.log(dados)</p>
+            <!--<p>Clique para ver a <input type="button" value="Resposta" onclick="resp2()"></p>-->
         </div>
         <div>
             <h4>
                 3 - Imprima no console somente o nome
             </h4>
-            <p>
-                Sobrenome a ser colocado na variável: 
-                <input type="text" name="sNome" id="sNome">
-                <input type="button" value="Resposta" onclick="resposta3()">
-            </p>
+            <p>console.log(dados.nome)</p>
         </div>
         <div>
             <h4>
                 4 - Imprima no console somente a idade
             </h4>
-            <p>
-                Clique para ver a
-                <input type="button" value="Resposta" onclick="resposta4()">
-            </p>
+            <p>console.log(dados.idade)</p>
         </div>
 
         <div>
             <h4>
                 5 - Imprima no console o texto buscando as informações do objeto
                 “O número do telefone do João é 55-(011) 9928-9918 e ele mora na Rua B e ele tem 18 anos”
-                
             </h4>
-
-            <fieldset>
-                <legend>Média das notas</legend>
-                <label>1ª nota:</label>
-                <input id="nota1" type="text"/><br>
-                <label>2ª nota: </label>
-                <input id="nota2" type="text"/><br>
-                <label>3ª nota: </label>
-                <input id="nota3" type="text"/><br>
-                <button onclick="resposta5()">Calcular Média</button>
-            </fieldset>
-
+            <p>console.log(`“O número do telefone do ${dados.nome} é ${dados.telefone}, ele mora na ${dados.endereco} e ele tem ${dados.idade} anos”`)</p>
         </div>
                     
         <div>
@@ -227,17 +192,7 @@
                 Ex3: Gustavo, 55-(051) 9908-9968, Rua C, 13.
                 Ex4: Bruno, 55-(051) 9908-1568, Rua C, 50. 
             </h4>
-            <p>
-                Exemplo 1: calcularHoras(1) retorna 60 minutos  
-                Exemplo 2: calcularHoras(2) retorna 120 minutos
-            </p>
-            <fieldset>
-                <legend>insira a quantidade de horas</legend>
-                <label>hora:</label>
-                <input id="hora" type="text"/><br>
-                
-                <button onclick="resposta6()">Converter hora em min</button>
-            </fieldset>
+            <p>console.log(cadaastro)</p>
         </div>
                     
         <div>
@@ -246,30 +201,33 @@
                 Exemplo 1: maioresDeIdade() retorna um array com o João, Carlos e Bruno
             </h4>    
             <p>
-                Exemplo 1: calcularNumeros( 1, 5, “soma”) retorna 6
-                Exemplo 2: calcularNumeros( 10, 7, “subtrai”) retorna 3
-            </p>   
-
-
+                var maior = cadastro.filter(function(cadastro){
+                    return cadastro.idade >= 18;
+                });
+                console.log(maior)
+            </p>
         </div>     
         <div>
             <h4>
             8 - Crie uma função que retorne a soma de todas as idades. 
             <input type="button" value="Resposta" onclick="resposta8()">
             </h4>
-            
+            <div class="res8">
+
+            </div>
         </div>
         <div>
             <h4>
             9 - Crie um botão com o texto “Alterar” e uma tag h1 com o título “Minha página”. Adicione no html um evento onclick chamando uma função que deve alterar o texto da tag h1 para “Outra página” 
-            <input type="button" value="Resposta" onclick="resposta8()">
             </h4>
-            
+
+            <h1 class="res9">minha Pagina</h1>
+            <input type="button" value="Alterar" onclick="resposta9()">
         </div>
         <div>
             <h4>
             10 - Altere o texto do h1 adicionando um html interno com “Minha <small>página</small>” 
-            <input type="button" value="Resposta" onclick="resposta8()">
+            <input type="button" value="Resposta" onclick="resposta10()">
             </h4>
             
         </div>
@@ -284,12 +242,19 @@
                 <li>O formulário deve ser validado e exibir as mensagens ao clicar no botão salvar</li>
 
             </ul>
-            <input type="button" value="Resposta" onclick="resposta8()">
+            <input type="button" value="Resposta" onclick="extra()">
             </h4>
             
         </div>
     </section>
-
+    <section>
+        <div>
+            <h5>Visualizar codigo</h5>
+            
+             <a href="https://github.com/geovanefi/DesenvolvedorWeb/tree/main/projectJavaScript7"> Repositório GitHub</a>
+            
+        </div>
+    </section>
     <footer>
         <p>&copy; Queen Web Developer</p>
     </footer>
