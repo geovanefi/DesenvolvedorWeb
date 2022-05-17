@@ -240,11 +240,17 @@
                 <li>O campo idade deve ser um número, caso não seja informado um número no input informe o usuário </li>
                 <li>Caso o formulário seja válido adicione essas informações formatadas com html abaixo do formulário</li>
                 <li>O formulário deve ser validado e exibir as mensagens ao clicar no botão salvar</li>
-
             </ul>
-            <input type="button" value="Resposta" onclick="extra()">
+            <!--<input type="button" value="Resposta" onclick="extra()">-->
             </h4>
-            
+            <form action="/" method="post" id="form-extra">
+                <input type="text" name="username" placeholder="Nome Completo">
+                <input type="tel" name="telefone" placeholder="(xx)xx-xx-xx-xx">
+                <input type="text" name="sexo" placeholder="Masculino / Feminino">
+                <input type="text" name="endereco" placeholder="Rua Nº - UF">
+                <input type="number" name="idade" placeholder="">
+                <button type="submit">Salvar</button>
+            </form>
         </div>
     </section>
     <section>

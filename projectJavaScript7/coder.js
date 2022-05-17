@@ -202,11 +202,9 @@ function resp9(){
 
 //10 - Altere o texto do h1 adicionando um html interno com “Minha <small>página</small>” 
 function resp10(){
-    const questao10 = document.querySelector('h1.res9')
-    questao10.innerHTML += " A Resposta da questão 10 com : Minha <small>página</small."
+    let form = document.getElementById('form-extra');
+    form.innerHTML = " A Resposta da questão 10 com : Minha <small>página</small."
 }
-
-
 /* extra - Crie uma página html com um formulário com os seguintes requisitos:
     <ul>
         <li>O formulário deve possuir os inputs nome, telefone, sexo, endereço e idade com um botão “Salvar”</li>
@@ -218,3 +216,17 @@ function resp10(){
     </ul>
 
 */
+
+// Function to check that the input field is not empty while submitting
+function requireValue(input) {
+    return !(input.value.trim() === '');
+}
+// Event listener to perform the validation when user clicks on submit button
+form.addEventListener('submit', (event) => {
+    requiredFields.forEach((input) => {
+        valid = valid|requireValue(input.input);
+    });
+    if (!valid) {
+        event.preventDefault();
+    }
+});
