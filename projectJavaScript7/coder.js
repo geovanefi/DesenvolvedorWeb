@@ -68,17 +68,17 @@ function calcular(oper) {
     var valor2 = document.calcform.valor2.value;
  
     if (oper == "somar") {
-       var res = parseInt(valor1) + parseInt(valor2);
+        var res = parseInt(valor1) + parseInt(valor2);
     } else {
        if (oper == "subtrair") {
-          var res = valor1-valor2;
-       } else {
-          if (oper == "multiplicar") {
+            var res = valor1-valor2;
+        } else {
+            if (oper == "multiplicar") {
              var res = valor1*valor2;
-          } else {
+            } else {
              var res = valor1/valor2;
-          }
-       }
+            }
+        }
     }
  
     document.calcform.res.value = res;
@@ -144,7 +144,7 @@ let cadastro = [
         nome: 'Carlos', 
         telefone: '55-(051) 9908-6666', 
         endececo: 'Rua C', 
-        idade: 13,
+        idade: 22,
     },
     {
         nome: 'Gustavo', 
@@ -164,18 +164,16 @@ console.log(cadastro)
 //7 - Crie uma função que retorne um novo array somente com os maiores de idade. 
 //Exemplo 1: maioresDeIdade() retorna um array com o João, Carlos e Bruno
 
+function maiorDeIdade(){
+    return cadastro.filter (p => p.idade >= 18)
+}
+console.log(maiorDeIdade());
+
 var maior = cadastro.filter(function(cadastro){
     return cadastro.idade >= 18;
 });
 console.log(maior)
 
-
-function maiorIdade(objeto){
-    var maior = objeto.filter(function(nome){
-        return nome.idade >= 18 ;
-    });
-    return maior;
-};
 
 // 8 - Crie uma função que retorne a soma de todas as idades.
 
@@ -191,42 +189,54 @@ function resp8() {
     questao8.innerText = `a soma de todas as idades é ${somar}` 
 }
 
+function somaIdade() {
+    let somando = 0;
 
+    cadastro.forEach(p => {
+        somando += p.idade;
+    });
+    return somando;
+}
+console.log(somaIdade());
 
 //  9 - Crie um botão com o texto “Alterar” e uma tag h1 com o título “Minha página”. Adicione no html um evento onclick chamando uma função que deve alterar o texto da tag h1 para “Outra página” 
 function resp9(){
     const questao9 = document.querySelector('h1.res9')
-    questao9.innerText = " Outra página."
+    questao9.innerText = " Outra página." 
 }
-
+//textContent
 
 //10 - Altere o texto do h1 adicionando um html interno com “Minha <small>página</small>” 
 function resp10(){
-    let form = document.getElementById('form-extra');
-    form.innerHTML = " A Resposta da questão 10 com : Minha <small>página</small."
+    let questao9 = document.querySelector('h1.res9')
+    questao9.innerHTML = " Minha <small>página</small";
 }
-/* extra - Crie uma página html com um formulário com os seguintes requisitos:
-    <ul>
-        <li>O formulário deve possuir os inputs nome, telefone, sexo, endereço e idade com um botão “Salvar”</li>
-        <li>Caso o usuário não preencha um dos campos é necessário informar os campos que não foram preenchidos</li>
-        <li>O campo idade deve ser um número, caso não seja informado um número no input informe o usuário </li>
-        <li>Caso o formulário seja válido adicione essas informações formatadas com html abaixo do formulário</li>
-        <li>O formulário deve ser validado e exibir as mensagens ao clicar no botão salvar</li>
 
-    </ul>
+// Extra
 
-*/
+function formulario(){
+    let itemNome = document.querySelector('#nome');
+    let itemTelefone = document.querySelector('#tel');
+    let itemSexo = document.querySelector('#sexo');
+    let itemEndereco = document.querySelector('#endereco');
+    let itemIdade = document.querySelector('#idade');
 
-// Function to check that the input field is not empty while submitting
-function requireValue(input) {
-    return !(input.value.trim() === '');
-}
-// Event listener to perform the validation when user clicks on submit button
-form.addEventListener('submit', (event) => {
-    requiredFields.forEach((input) => {
-        valid = valid|requireValue(input.input);
-    });
-    if (!valid) {
-        event.preventDefault();
+    let conteudoResultado = document.querySelector('#meu-form');
+
+    if (itemNome.value == ''){
+        alert ('Preencha o campo nome');
+    } else if (itemTelefone.value == ''){
+        alert ('Preencha o campo telefone');
+    } else if (itemSexo.value == ''){
+        alert ('Preencha o campo sexo');
+    } else if (itemEndereco.value == ''){
+        alert ('Preencha o campo endereço');
+    } else if (itemIdade.value == ''){
+        alert ('Preencha o campo idade');
+    } else{
+        conteudoResultado.innerHTML = `<p>${itemNome.value}</p>`
     }
-});
+}
+
+
+

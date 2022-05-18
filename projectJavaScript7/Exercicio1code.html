@@ -243,15 +243,17 @@
             </ul>
             <!--<input type="button" value="Resposta" onclick="extra()">-->
             </h4>
-            <form action="/" method="post" id="form-extra">
-                <input type="text" name="username" placeholder="Nome Completo">
-                <input type="tel" name="telefone" placeholder="(xx)xx-xx-xx-xx">
-                <input type="text" name="sexo" placeholder="Masculino / Feminino">
-                <input type="text" name="endereco" placeholder="Rua Nº - UF">
-                <input type="number" name="idade" placeholder="">
-                <button type="submit">Salvar</button>
+            <form>
+                <input id="nome" type="text" name="username" placeholder="Nome Completo">
+                <input id="tel" type="tel" name="telefone" placeholder="(xx)xx-xx-xx-xx">
+                <input id="sexo" type="text" name="sexo" placeholder="Masculino / Feminino">
+                <input id="endereco" type="text" name="endereco" placeholder="Rua Nº - UF">
+                <input id="idade" type="number" name="idade" placeholder="30">
+                
             </form>
+            <button onclick="formulario()">Salvar</button>
         </div>
+        <div id="meu-form"></div>
     </section>
     <section>
         <div>
